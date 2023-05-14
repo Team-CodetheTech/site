@@ -1,0 +1,233 @@
+<script src="https://cdn02.jotfor.ms/static/prototype.forms.js?3.3.41800" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/static/jotform.forms.js?3.3.41800" type="text/javascript"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
+<script src="https://cdn01.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.41800" type="text/javascript"></script>
+<script defer src="https://cdn02.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.41800" type="text/javascript"></script>
+<script defer src="https://cdn03.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.41800" type="text/javascript"></script>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="https://cdn01.jotfor.ms/js/payments/payment_form_embedded.js?v=3.3.41800" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/js/payments/validategateways.js?v=3.3.41800" type="text/javascript"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = false;
+	JotForm.extendsNewTheme = true;
+	JotForm.singleProduct = false;
+	JotForm.newPaymentUIForNewCreatedForms = false;
+	JotForm.newPaymentUI = true;
+	JotForm.submitError="jumpToFirstError";
+
+	JotForm.init(function(){
+	/*INIT-START*/
+      setTimeout(function() {
+          $('input_30').hint('ex: myname@example.com');
+       }, 20);
+      JotForm.setPhoneMaskingValidator( 'input_25_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023' );
+      JotForm.alterTexts({"couponApply":"Apply","couponBlank":"Please enter a coupon.","couponChange":"","couponEnter":"Enter coupon","couponExpired":"Coupon is expired. Please try another one.","couponInvalid":"Coupon is invalid.","couponValid":"Coupon is valid.","shippingShipping":"Shipping","taxTax":"Tax","totalSubtotal":"Subtotal","totalTotal":"Total"}, true);
+	/*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"submit","qid":"14","text":"Submit","type":"control_button"},null,null,{"description":"","name":"typeOf","qid":"17","text":"Type of Donation","type":"control_radio"},null,null,null,null,null,null,null,{"description":"","name":"phoneNumber25","qid":"25","text":"Phone Number","type":"control_phone"},null,null,{"name":"donationForm","qid":"28","text":"Donation Form","type":"control_head"},{"description":"","name":"fullName","qid":"29","text":"Full Name","type":"control_fullname"},{"description":"","name":"email30","qid":"30","subLabel":"example@example.com","text":"E-mail","type":"control_email"},null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"amount","qid":"43","text":"Amount","type":"control_stripeCheckout"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"submit","qid":"14","text":"Submit","type":"control_button"},null,null,{"description":"","name":"typeOf","qid":"17","text":"Type of Donation","type":"control_radio"},null,null,null,null,null,null,null,{"description":"","name":"phoneNumber25","qid":"25","text":"Phone Number","type":"control_phone"},null,null,{"name":"donationForm","qid":"28","text":"Donation Form","type":"control_head"},{"description":"","name":"fullName","qid":"29","text":"Full Name","type":"control_fullname"},{"description":"","name":"email30","qid":"30","subLabel":"example@example.com","text":"E-mail","type":"control_email"},null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"amount","qid":"43","text":"Amount","type":"control_stripeCheckout"}]);}, 20); 
+</script>
+<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link id="custom-font" type="text/css" rel="stylesheet" href="//cdn.jotfor.ms/fonts/?family=Inter" />
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/defaultV2.css?v=5fa5db2
+"/>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/themes/CSS/64012b8864323209265bec99.css?v=3.3.41800&themeRevisionID=64102f3636353508d014b131"/>
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_styles.css?3.3.41800" />
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_feature.css?3.3.41800" />
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+/*PREFERENCES STYLE*/
+    .form-all {
+      font-family: Inter, sans-serif;
+    }
+  
+    .form-label.form-label-auto {
+      
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+  
+    }
+  
+    .form-line {
+      margin-top: 12px;
+      margin-bottom: 12px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  
+    .form-all {
+      max-width: 752px;
+      width: 100%;
+    }
+  
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+      width: 230px;
+    }
+  
+    .form-all {
+      font-size: 16px
+    }
+  
+    .supernova .form-all, .form-all {
+      background-color: #fff;
+    }
+  
+    .form-all {
+      color: rgb(13, 1, 106);
+    }
+    .form-header-group .form-header {
+      color: rgb(13, 1, 106);
+    }
+    .form-header-group .form-subHeader {
+      color: rgb(13, 1, 106);
+    }
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label,
+    span.FITB .qb-checkbox-label,
+    span.FITB .qb-radiobox-label,
+    span.FITB .form-radio label,
+    span.FITB .form-checkbox label,
+    [data-blotid][data-type=checkbox] [data-labelid],
+    [data-blotid][data-type=radiobox] [data-labelid],
+    span.FITB-inptCont[data-type=checkbox] label,
+    span.FITB-inptCont[data-type=radiobox] label {
+      color: rgb(13, 1, 106);
+    }
+    .form-sub-label {
+      color: 1a1a1a;
+    }
+  
+  .supernova {
+    background-color: rgb(178, 119, 127);
+  }
+  .supernova body {
+    background: transparent;
+  }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-dropdown,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: #fff;
+    }
+  
+      .supernova {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center top;
+      }
+      .supernova {
+        background-image: url("https://www.jotform.com/uploads/beril/form_files/galaxy-bg-image.6405a140a1b097.18087512.png");
+      }
+      #stage {
+        background-image: url("https://www.jotform.com/uploads/beril/form_files/galaxy-bg-image.6405a140a1b097.18087512.png");
+      }
+    
+    .form-all {
+      background-image: none;
+    }
+  
+    .form-all {
+      position: relative;
+    }
+    .form-all:before {
+      content: "";
+      background-image: url("https://www.jotform.com/uploads/iitecell2022/form_files/Screenshot%202023-05-13%20212424.6460a0409345a5.15569659.png");
+      display: inline-block;
+      height: 83px;
+      position: absolute;
+      background-size: 241px 83px;
+      background-repeat: no-repeat;
+      width: 100%;
+    }
+    .form-all {
+      margin-top: 103px;
+    }
+    .form-all:before {
+      top: -93px;
+      background-position: top center;
+      left: 0;
+    }
+          /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" action="https://submit.jotform.com/submit/231331817940453" method="post" name="form_231331817940453" id="231331817940453" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="231331817940453" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_28" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h1 id="header_28" class="form-header" data-component="header">Donation Form</h1>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_fullname" id="id_29"><label class="form-label form-label-top" id="label_29" for="first_29"> Full Name<span class="form-required">*</span> </label>
+        <div id="cid_29" class="form-input-wide jf-required" data-layout="full">
+          <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top" data-input-type="first"><input type="text" id="first_29" name="q29_fullName[first]" class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_29 given-name" size="10" value="" data-component="first" aria-labelledby="label_29 sublabel_29_first" required="" /><label class="form-sub-label" for="first_29" id="sublabel_29_first" style="min-height:13px" aria-hidden="false">First Name</label></span><span class="form-sub-label-container" style="vertical-align:top" data-input-type="last"><input type="text" id="last_29" name="q29_fullName[last]" class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_29 family-name" size="15" value="" data-component="last" aria-labelledby="label_29 sublabel_29_last" required="" /><label class="form-sub-label" for="last_29" id="sublabel_29_last" style="min-height:13px" aria-hidden="false">Last Name</label></span></div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_email" id="id_30"><label class="form-label form-label-top" id="label_30" for="input_30"> E-mail<span class="form-required">*</span> </label>
+        <div id="cid_30" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="email" id="input_30" name="q30_email30" class="form-textbox validate[required, Email]" data-defaultvalue="" style="width:310px" size="310" value="" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_30 sublabel_input_30" required="" /><label class="form-sub-label" for="input_30" id="sublabel_input_30" style="min-height:13px" aria-hidden="false">example@example.com</label></span> </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_phone" id="id_25"><label class="form-label form-label-top" id="label_25" for="input_25_full"> Phone Number<span class="form-required">*</span> </label>
+        <div id="cid_25" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="tel" id="input_25_full" name="q25_phoneNumber25[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]" data-defaultvalue="" autoComplete="section-input_25 tel-national" style="width:310px" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_25" required="" /></span> </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_radio" id="id_17"><label class="form-label form-label-top" id="label_17" for="input_17"> Type of Donation<span class="form-required">*</span> </label>
+        <div id="cid_17" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_17" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_17" class="form-radio validate[required]" id="input_17_0" name="q17_typeOf" value="One Time Donation" required="" /><label id="label_input_17_0" for="input_17_0">One Time Donation</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_17" class="form-radio validate[required]" id="input_17_1" name="q17_typeOf" value="Monthly Donation" required="" /><label id="label_input_17_1" for="input_17_1">Monthly Donation</label></span></div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_stripeCheckout" id="id_43" data-payment="true"><label class="form-label form-label-top" id="label_43" for="input_43"> Amount </label>
+        <div id="cid_43" class="form-input-wide" data-layout="full">
+          <div data-wrapper-react="true">
+            <div data-wrapper-react="true" class="product-container-wrapper">
+              <div class="filter-container"></div><input type="hidden" name="simple_fpc" data-payment_type="stripeCheckout" data-component="payment1" value="43" /><input type="hidden" name="payment_transaction_uuid" id="paymentTransactionId" /><input type="hidden" name="payment_total_checksum" id="payment_total_checksum" data-component="payment2" />
+              <div id="image-overlay" class="overlay-content" style="display:none"><img id="current-image" /><span class="lb-prev-button">prev</span><span class="lb-next-button">next</span><span class="lb-close-button">( X )</span><span class="image-overlay-product-container"></span></div><span class="form-sub-label-container" style="vertical-align:top"><input type="text" class="form-textbox validate[Numeric]" id="input_43_donation" name="q43_amount[price]" value="" data-component="paymentDonation" aria-labelledby="label_43" /><span class="donation_currency">INR</span><label class="form-sub-label" for="input_43_donation" style="min-height:13px" aria-hidden="false">Description</label></span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_14">
+        <div id="cid_14" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_14" type="submit" class="form-submit-button form-submit-button-gradient-24 submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Submit</button></div>
+        </div>
+      </li>
+      <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
+    </ul>
+  </div>
+  <script>
+    JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <script>
+    JotForm.poweredByText = "Powered by Jotform";
+  </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="231331817940453" />
+  <script type="text/javascript">
+    var all_spc = document.querySelectorAll("form[id='231331817940453'] .si" + "mple" + "_spc");
+    for (var i = 0; i < all_spc.length; i++)
+    {
+      all_spc[i].value = "231331817940453-231331817940453";
+    }
+  </script>
+  <div class="formFooter-heightMask"></div>
+  <div class="formFooter f6 branding21">
+    <div class="formFooter-wrapper formFooter-leftSide"><a href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=231331817940453&utm_content=jotform_logo&utm_campaign=powered_by_jotform_le" target="_blank" class="formFooter-logoLink"><img class="formFooter-logo" src="https://cdn.jotfor.ms/assets/img/logo2021/jotform-logo-white.svg" alt="Jotform Logo" style="height: 44px;"></a></div>
+    <div class="formFooter-wrapper formFooter-rightSide"><span class="formFooter-text">Now create your own Jotform - It's free!</span><a class="formFooter-button" href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=231331817940453&utm_content=jotform_button&utm_campaign=powered_by_jotform_le" target="_blank">Create your own Jotform</a></div>
+  </div>
+</form><script type="text/javascript">JotForm.ownerView=true;</script><script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.41800"></script>
+<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.41800"></script>
